@@ -12,10 +12,6 @@ provider "azurerm" {
   features {}
 }
 
-variable "resourceLocation" {
-  default = "Canada East"
-}
-
 # Create a resource group
 resource "azurerm_resource_group" "example" {
   name     = "tfe-resource-group"
